@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #1F2631;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    transition: all 1s ease;
+}
+
+.box-1 {
+    border: 0px solid black;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: #313A49;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Helvetica', sans-serif;
+    position: absolute;
+}
+
+.box-2 h5 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #00ff85;
+    line-height: 1.4px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box-2 {
+    background-color: #313A49 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 2rem;
+    background: url('https://res.cloudinary.com/dkn6an4bw/image/upload/v1725699098/pattern-divider-desktop_ti4hun.svg') no-repeat center;
+    background-size: contain;
+}
+
+#btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0px solid black;
+    background-color: #00ff85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease;
+    margin-top: 17rem;
+}
+
+#btn::before {
+    content: "";
+    background: url('https://res.cloudinary.com/dkn6an4bw/image/upload/v1725699098/icon-dice_alrneo.svg') no-repeat center;
+    background-size: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#btn:hover {
+    background-color: #00ff85;
+    box-shadow: 0 0 20px 10px rgba(0, 255, 133, 0.6);
+    transform: scale(1.1);
+}
+
+#contain {
+    background: none;
+    transition: all 0.3 ease;
+    font-size: 20px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+#contain h3 {
+    width: 100%;
+    height: auto;
+    background: #313A49 !important;
+    margin-top: 1rem;
+    color: #CCD8E7;
+    padding: 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+#contain {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #contain {
+        font-size: 22px;
+    }
+
+    #contain h3 {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contain {
+        font-size: 18px;
+    }
+
+    #contain h3 {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 770px) {
+    .box-1 {
+        max-width: 300px;
+        margin: 30px auto;
+        transition: all 1s ease;
+    }
+
+    .btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+#count {
+
+    background-color:#313A49;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+#count:hover {
+
+ color: #00ff85;
+ text-shadow: 0px 0px 10px #00ff85;
+}
